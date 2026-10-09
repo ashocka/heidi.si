@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heidi.si :: mrge</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css"></link>
+</head>
+<body>
+
+    <h1>mrge</h1>
+<p>50 scannable trading cards, AI-generated images, web platform <a target="_blank" href="https://mrge.cc/">Visit ></a></p>
+<table>
+        <thead>
+            <tr>
+                <th style="width: 40%;"><a href="#">Name</a></th>
+
+                <th style="width: 20%; text-align: right;"><a href="#">Tags</a></th>
+                <th style="width: 25%; text-align: right;"><a href="#">Created</a></th>
+                <th style="width: 15%; text-align: right;"><a href="#">Size</a></th>
+            </tr>
+        </thead>
+        <tbody>
+          
+            <tr class="parent-row">
+                <td>
+                    
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+                    <a href="../index.html">Parent Directory</a>
+                </td>
+                <td class="val-tags">generative AI, LGBT, social game</td>
+                <td class="val-date">2024-10-08 11:30</td>
+                <td class="val-size">13MB</td>
+            </tr>
+            </tbody></table>
+
+            <h2>Project Description</h2>
+
+<p>“mrge” is a trading card game with a digital twist designed for <a href="https://nonbinary.wiki/wiki/Transmasculine" target="_blank">transmasculine</a> individuals who are looking to start weightlifting to aid their body transformation.</p>
+
+<p>It was launched and presented at the <a target="_blank" href="https://transakcija.si/transcon/">TransCon in Ljubljana</a> in November 2024.</p>
+
+<p>The project consists of 12-card packs and an <a target="_blank" href="https://mrge.cc/">educational website</a>. Each card is connected with a QR code on the back, linking to a web page with more information about that particular topic.
+</p>
+
+<img src="image01.jpg" alt="photo of some of the cards" />
+
+<h2>Technical Details</h2>
+<p>The first person to scan each card is able to “unlock” it on the website, making it visible to everyone. For selected cards, they may also claim a free prize (water bottles, caps, weightlifting gear, stickers, access to a buddy-up group, special gym music playlists, etc.).</p>
+<p>The graphics, as well as the content and the gameplay, were created by generative AI, aided by a human designing the cards, web development, research, reviewing and fact-checking. Each card represents one tip for weightlifting or one exercise. Currently, there are 50 different cards available to be collected (<a href="https://mrge.cc/cards" target="_blank">view the full list here</a>). The card packs are completely free for the end users.</p>
+<p>I chose the name “mrge” because, in Slovenian, it means an equivalent of “beefcakes,” and it’s usually used in a masculine context but grammatically neutral.</p>
+
+<img src="image02.jpg" alt="presentation of the cards" />
+
+<h2>Context and Significance</h2>
+<p>The way production is managed and prioritised in our system is based on the commercial interest and profitability. Marginalised communities do not have access to tailored products and services. The idea of mrge was to produce a high production value product aimed at an extremely narrow community — transmasculine individuals.</p>
+<p>Gyms, as they currently exist, are often <a target="_blank" href="https://scholarworks.calstate.edu/downloads/cn69m655g">unwelcoming spaces for transgender individuals</a>. At a professional level, sports are inherently binary, with limited interaction between the two sexes. This segregation extends to amateur settings, where distinct spaces such as bathrooms, locker rooms, and showers can lead to discomfort and awkward encounters for those who do not conform to traditional gender norms. My own experiences navigating these obstacles inspired the creation of this project.</p>
+<p>As I started working on this project, I encountered obvious biases in generative AI. While I anticipated some level of bias, the extent was surprising. The LLM training data frequently lacks the nuanced understanding of the terms like transgender, non-binary, and transmasculine, and tiptoes around the related terms like LGBT and queer, at times blocking and censoring output related to these terms, despite the prompts being perfectly appropriate.</p>
+<p>More broadly, fitness-related prompts typically produce images of bodies that conform to societal beauty standards: <a href="https://www.genderit.org/feminist-talk/breaking-matrioska-gender-and-racial-biases-ai-generated-art" target="_blank">usually white</a>, extremely fit, and with no visible disabilities. LLMs do not “know” what a visibly queer body looks like, and generate characters that seem to visually fit the gender binary.</p>
+<img src="image03.jpg" alt="screenshot of the website" />
+
+<h2>Examples and Models Used</h2>
+<p>Recraft AI is a fantastic tool that allows users to generate very consistent graphics; I used it to generate some of the cards.</p>
+<p>However, when it came to human characters, the models were overly-tuned, as seen below.</p>
+<img src="image04.jpg" alt="recraft results" />
+
+<p>ChatGPT/Dall-E worked better to create queer-looking people, but it did produce some stereotypes (undercut, short hair, earrings). The model didn’t work well for this project as it would not keep graphics consistent.</p>
+<img src="image05.jpg" alt="dall-e results" />
+
+<p>Midjourney produced a similar issue — it created either consistent style OR an androgynous look, but would not do both.</p>
+<img src="image06.png" alt="midjourney results" />
+
+<p>Microsoft Bing started having issues with the prompt that included the word “non-binary”.</p>
+<img src="image07.jpg" alt="microsoft bing results" />
+
+<p>Stable Diffusion was not so helpful for transgender bodies, same with Gencraft, RunwayML, and Adobe Express.</p>
+<img src="image08.jpg" alt="stable diffusion results" />
+
+<p>The solution was to use Adobe’s Firefly tool to manually adjust some of the pictures to make them look more gender-neutral or ambiguous.</p>
+<img src="image09.jpg" alt="firefly results" />
+
+<script src="script.js"></script>
+
+</body>
+</html>
