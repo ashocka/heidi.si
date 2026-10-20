@@ -5,7 +5,10 @@ const path = require('path');
 
 const BASE_URL = 'https://heidi.si';
 const OUTPUT_DIR = path.join(__dirname, 'pdf-outputs'); // Changed: now relative to script location
-const FINAL_PDF = path.join(__dirname, 'heidi-si-complete.pdf'); // Changed: now relative to script location
+
+// Generate filename with current date
+const currentDate = new Date().toISOString().split('T')[0]; // Format: YYYY-MM-DD
+const FINAL_PDF = path.join(__dirname, `Heidi-portfolio_${currentDate}.pdf`);
 
 // Helper function to discover all project pages
 async function discoverPages(page) {
