@@ -5,11 +5,16 @@
             padding: 20px;
             margin: 0;
             max-width: 1000px;
-                line-height: 1.6;
+            line-height: 1.6;
+            font-size: 18px;
         }
+
         h1 {
             font-size: 1.5em;
             margin-bottom: 20px;
+            font-family: "Coral Pixels", monospace;
+            font-weight: 400;
+            font-style: normal;
         }
         table {
             width: 100%;
@@ -63,3 +68,17 @@
             color: #555555;
             font-style: italic;
         }
+
+        img {
+            max-width: 100%;
+        }
+
+        .table {
+            max-width: 100%;
+            overflow: scroll;
+        }
+
+
+@media (max-width: 1024px) {
+   
+}
