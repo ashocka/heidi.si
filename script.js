@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
     try {
         // 1. Fetch the HTML file from the server
-        const response = await fetch('footer.html');
+        const response = await fetch('https://heidi.si/footer.html');
         if (!response.ok) throw new Error('Failed to load file');
 
         // 2. Convert the response to text string
